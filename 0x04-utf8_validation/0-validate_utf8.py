@@ -30,7 +30,7 @@ def validUTF8(data):
             else:
                 return False
         elif data[i] & 0b11110000 == 0b11100000:
-            # 3-byte utf-8 character encoding
+            # 3-byte utf-8 character encodingg
             span = 3
             if n - i >= span:
                 next_body = list(map(
